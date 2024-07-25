@@ -1,0 +1,254 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+p,
+ul,
+li,
+img,
+a,
+section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Basic body styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Container styling */
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Section styling */
+#one {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#one .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#one .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#one .image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Buttons styling */
+.buttons {
+  margin: 20px 0;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buttons button:hover {
+  background-color: #11169c;
+}
+
+/* Icons styling */
+.icons {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.icons li {
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.icons a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  text-decoration: none;
+}
+
+.icons a:hover {
+  color: #0a498d;
+}
+
+/* Styles for the Experience section */
+#two {
+  padding: 2rem;
+}
+
+/* Grid layout for articles */
+.upper-part {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+  gap: 1rem; /* Adjust the gap between items */
+}
+
+/* Style for work items */
+.work-item {
+  background: #f4f4f4; /* Optional: background color for better visibility */
+  border-radius: 8px; /* Optional: rounded corners */
+  overflow: hidden; /* Optional: hide overflow */
+  text-align: center; /* Center text and images */
+}
+
+.work-item h3 {
+  padding: 0.5rem;
+  margin: 0;
+  font-size: 1rem;
+  color: #333; /* Adjust text color */
+}
+.exper {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .upper-part {
+    grid-template-columns: 1fr; /* Stack items in one column */
+  }
+}
+/* Get In Touch section */
+#four {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#four p {
+  margin-bottom: 20px;
+}
+
+#four form {
+  max-width: 600px;
+  margin: auto;
+}
+
+#four form .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#four form .col-6,
+#four form .col-12 {
+  width: 100%;
+  padding: 10px;
+}
+
+#four form .col-6 {
+  flex: 1 1 50%;
+}
+
+#four form input,
+#four form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+#four form .actions {
+  text-align: center;
+}
+
+#four form .actions input {
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#four form .actions input:hover {
+  background: #0056b3;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .actions .button {
+    display: block;
+    margin: 10px auto;
+  }
+
+  .icons li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  #four form .col-6 {
+    flex: 1 1 100%;
+  }
+}
+/* Grid container styles */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column by default */
+  gap: 20px; /* Space between items */
+  text-align: center; /* Center text within grid container */
+}
+
+/* Heading styles */
+.grid-container h2 {
+  margin-bottom: 20px; /* Space below heading */
+}
+
+/* Styling for the above part */
+.above-part {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Auto-adjust columns */
+  gap: 20px; /* Space between images */
+}
+
+/* Styling for the lower part */
+.lower-part {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(150px, 1fr)
+  ); /* Adjust columns based on content */
+  gap: 20px; /* Space between images */
+}
+
+/* Ensure images fit their container */
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
