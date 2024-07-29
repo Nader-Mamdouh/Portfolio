@@ -14,12 +14,14 @@ section {
   text-decoration: none;
   border-radius: 5px;
 }
-
+span.label {
+  padding: 10px;
+}
 /* Basic body styling */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background: #f4f4f4;
+  background-color: #fff;
   color: #333;
 }
 
@@ -28,6 +30,7 @@ body {
   padding: 20px;
   max-width: 1200px;
   margin: auto;
+  background-color: #fff;
 }
 
 /* Section styling */
@@ -35,10 +38,11 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  background: #fff;
+  background-color: #fff;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
 }
 
 #one .content {
@@ -51,12 +55,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  object-fit: cover;
 }
 
 #one .image-container img {
   max-width: 100%;
   height: auto;
-  border-radius: 5px;
+  border-radius: 80%;
+  margin-top: 10px;
 }
 
 /* Buttons styling */
@@ -74,6 +80,7 @@ body {
   color: white;
   cursor: pointer;
   border-radius: 5px;
+  width: 200px;
 }
 
 .buttons button:hover {
@@ -102,16 +109,17 @@ body {
 /* Styles for the Experience section */
 #two {
   padding: 2rem;
+  background-color: #fff;
 }
 
 .upper-part {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+  background-color: #fff;
 }
 
 .work-item {
-  background: #f4f4f4;
   border-radius: 8px;
   overflow: hidden;
   text-align: center;
@@ -128,6 +136,7 @@ body {
   text-align: center;
   font-size: 35px;
   margin-bottom: 10px;
+  background-color: #fff;
 }
 
 /* Responsive Design */
@@ -265,6 +274,25 @@ body {
   .lower-part {
     grid-template-columns: 1fr; /* Stack items in one column */
   }
+  nav ul {
+    display: none;
+    flex-direction: row;
+    width: 100%;
+    background-color: #333;
+    left: 0;
+  }
+
+  nav ul li {
+    margin: 0;
+  }
+
+  nav ul li a {
+    padding: 10px;
+  }
+
+  nav ul.showing {
+    display: flex;
+  }
 }
 /* Get In Touch section styling */
 #four {
@@ -355,20 +383,19 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
-}
-
-nav ul li {
-  margin: 0 15px;
+  justify-content: left;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
-  padding: 14px 20px;
+  padding: 20px;
   display: block;
 }
 
 nav ul li a:hover {
   background-color: #575757;
+}
+#three {
+  background-color: #fff;
 }
